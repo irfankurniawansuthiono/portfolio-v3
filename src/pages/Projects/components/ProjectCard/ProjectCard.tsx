@@ -34,7 +34,7 @@ export default function ProjectCard({
         maxW={"445px"}
         w={"full"}
         // eslint-disable-next-line react-hooks/rules-of-hooks
-        bg={"#FFFFF2"}
+        bg={"white"}
         boxShadow={"2xl"}
         rounded={"xl"}
         p={6}
@@ -61,7 +61,7 @@ export default function ProjectCard({
           >
             {title}
           </Heading>
-          <Stack direction={{ base: "column", md: "row" }}>
+          <Stack direction={{ base: "column", sm: "row" }}>
             <Button
               leftIcon={<VscPreview />}
               as={Link}

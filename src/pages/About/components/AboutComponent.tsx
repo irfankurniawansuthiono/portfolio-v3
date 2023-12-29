@@ -63,7 +63,7 @@ export const AboutComponent = () => {
             >
               <Image
                 rounded={"2xl"}
-                src="/home/profile-picture.jpg"
+                src="/home/profile-picture.webp"
                 alt="Profile Picture"
                 w={{ base: "100%", md: "25%" }}
                 loading="lazy"

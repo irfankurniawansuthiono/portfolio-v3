@@ -65,14 +65,14 @@ export const HomeComponent = () => {
           >
             <Flex flexDir={"column"}>
               <Heading
-                fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
-                textAlign={{ base: "center", sm: "left" }}
+                fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                textAlign={{ base: "center", md: "left" }}
               >
                 <Text as={"h1"}>Hi, I'm </Text>
               </Heading>
               <Heading
-                fontSize={{ base: "xl", md: "4xl", lg: "5xl" }}
-                textAlign={"center"}
+                fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                textAlign={{ base: "center", md: "left" }}
               >
                 <Text as={"h4"} color={"yellow.400"}>
                   Irfan Kurniawan Suthiono
@@ -149,17 +149,16 @@ export const HomeComponent = () => {
             </Flex>
           </Flex>
           <Flex
-            w={{ base: "100%", md: "sm" }}
+            w={{ base: "100%", sm: "sm" }}
             justifyContent={"center"}
             alignItems={"center"}
             order={{ base: 1, md: 2 }}
             rounded={"2xl"}
-            bgColor={"pink"}
           >
             <Image
               loading="lazy"
               rounded={"2xl"}
-              src="/home/profile-picture.jpg"
+              src="/home/profile-picture.webp"
               alt="Profile Picture"
             />
           </Flex>
