@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text, Stack, Avatar } from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Stack, Image } from "@chakra-ui/react";
 type CertificateCardProps = {
   from: string;
   title: string;
@@ -19,14 +19,14 @@ export default function CertificateCard({
         maxW={"445px"}
         w={"full"}
         // eslint-disable-next-line react-hooks/rules-of-hooks
-        bg={"white"}
+        bg={"#FFFFF2"}
         boxShadow={"2xl"}
         rounded={"xl"}
         p={6}
         overflow={"hidden"}
       >
-        <Box h={"100%"} bg={"gray.100"} mt={-6} mx={-6} mb={6} pos={"relative"}>
-          <img src={img} alt={altImg} />
+        <Box h={"100%"} bg={"gray.200"} mt={-6} mx={-6} mb={6} pos={"relative"}>
+          <Image loading="lazy" src={img} alt={altImg} />
         </Box>
         <Stack>
           <Text
@@ -48,9 +48,7 @@ export default function CertificateCard({
           </Heading>
         </Stack>
         <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
-          <Avatar src={"/home/profile-picture.jpg"} />
           <Stack direction={"column"} spacing={0} fontSize={"sm"}>
-            <Text fontWeight={600}>Irfan Kurniawan Suthiono</Text>
             <Text color={"gray.500"}>{dateObtained}</Text>
           </Stack>
         </Stack>

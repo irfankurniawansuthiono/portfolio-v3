@@ -1,8 +1,8 @@
 import { Box, Flex, HStack, Icon, Button, Text } from "@chakra-ui/react";
-import { IoHome } from "react-icons/io5";
+import { IoHomeOutline } from "react-icons/io5";
+import { FiPhone } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import { GrProjects } from "react-icons/gr";
-import { FaPhone } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 export const NavbarComponent = () => {
@@ -10,7 +10,7 @@ export const NavbarComponent = () => {
   const buttonList = [
     {
       name: "Home",
-      icon: IoHome,
+      icon: IoHomeOutline,
       path: "/",
     },
     {
@@ -25,7 +25,7 @@ export const NavbarComponent = () => {
     },
     {
       name: "Contact",
-      icon: FaPhone,
+      icon: FiPhone,
       path: "/contact",
     },
   ];
@@ -40,6 +40,7 @@ export const NavbarComponent = () => {
           rounded={"2xl"}
           pos={"fixed"}
           zIndex={999}
+          className={"animate__animated animate__fadeInDown animate__once"}
         >
           <HStack justifyContent={"center"} gap={5}>
             {buttonList.map((item) => (
@@ -52,6 +53,7 @@ export const NavbarComponent = () => {
                 bgColor={
                   location.pathname === item.path ? "yellow.400" : "gray.200"
                 }
+                _hover={{ bgColor: "none", opacity: 0.7 }}
               >
                 <Flex alignItems={"center"} gap={2}>
                   <Icon as={item.icon} />

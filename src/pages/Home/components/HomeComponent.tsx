@@ -8,6 +8,7 @@ import {
   Icon,
   Image,
 } from "@chakra-ui/react";
+import "animate.css";
 import { MdOpenInNew } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { IoMdDownload } from "react-icons/io";
@@ -26,7 +27,7 @@ export const HomeComponent = () => {
       id: 2,
       icon: <FaGithub />,
       url: "https://github.com/irfankurniawansuthiono",
-      colorScheme: "gray",
+      colorScheme: "blackAlpha",
     },
     {
       id: 3,
@@ -44,16 +45,18 @@ export const HomeComponent = () => {
   return (
     <Container maxW={"7xl"}>
       <Box
-        bg={"white"}
+        bg={"whitesmoke"}
         boxShadow={"2xl"}
         rounded={"xl"}
         p={8}
         textAlign={"center"}
+        className={"animate__animated animate__fadeIn"}
       >
         <Flex
           alignItems={"center"}
-          justifyContent={{ base: "center", md: "space-around" }}
+          justifyContent={{ base: "center", sm: "space-around" }}
           flexDir={{ base: "column", md: "row" }}
+          gap={{ base: 10 }}
         >
           <Flex
             flexDir={"column"}
@@ -62,21 +65,28 @@ export const HomeComponent = () => {
           >
             <Flex flexDir={"column"}>
               <Heading
-                fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-                textAlign={{ base: "center", md: "left" }}
+                fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
+                textAlign={{ base: "center", sm: "left" }}
               >
                 <Text as={"h1"}>Hi, I'm </Text>
+              </Heading>
+              <Heading
+                fontSize={{ base: "xl", md: "4xl", lg: "5xl" }}
+                textAlign={"center"}
+              >
                 <Text as={"h4"} color={"yellow.400"}>
                   Irfan Kurniawan Suthiono
                 </Text>
               </Heading>
+
               <Flex
                 bgColor={"gray.200"}
                 p={1}
                 px={3}
                 rounded={"lg"}
-                flexDir={{ base: "column", md: "row" }}
+                flexDir={{ base: "column", sm: "row" }}
                 alignItems={"center"}
+                justifyContent={{ base: "flex-start", sm: "center" }}
               >
                 <Text>Active Student in &nbsp;</Text>
                 <Flex
@@ -92,19 +102,9 @@ export const HomeComponent = () => {
                 </Flex>
               </Flex>
             </Flex>
-            <Text as={"p"} textAlign={"left"} mt={4}>
-              I am a dedicated React developer with a passion for crafting
-              engaging and user-friendly websites. With a strong foundation in
-              front-end development, I specialize in creating dynamic and
-              responsive user interfaces. My goal is to contribute to the
-              seamless user experience and functionality of websites by
-              leveraging my expertise in React and staying abreast of the latest
-              web development trends. Eager to collaborate on innovative
-              projects and bring ideas to life through clean and efficient code.
-            </Text>
             <Flex
               gap={5}
-              mt={2}
+              mt={4}
               justifyContent={{ base: "space-around", sm: "left" }}
             >
               {socialMediaLiat.map((item) => (
@@ -153,8 +153,11 @@ export const HomeComponent = () => {
             justifyContent={"center"}
             alignItems={"center"}
             order={{ base: 1, md: 2 }}
+            rounded={"2xl"}
+            bgColor={"pink"}
           >
             <Image
+              loading="lazy"
               rounded={"2xl"}
               src="/home/profile-picture.jpg"
               alt="Profile Picture"

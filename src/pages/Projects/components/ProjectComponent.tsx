@@ -7,12 +7,19 @@ import {
   Divider,
   AbsoluteCenter,
 } from "@chakra-ui/react";
+import "animate.css";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import ProjectList from "../../../assets/ProjectsList/ProjectsList";
 export default function ProjectComponent() {
   return (
     <Container maxW={"7xl"}>
-      <Box bg={"white"} boxShadow={"2xl"} rounded={"xl"} p={8}>
+      <Box
+        bg={"whitesmoke"}
+        boxShadow={"2xl"}
+        rounded={"xl"}
+        p={8}
+        className="animate__animated animate__fadeIn"
+      >
         <Heading
           textAlign={"center"}
           fontSize={{ base: "3xl", md: "4xl" }}
@@ -20,7 +27,7 @@ export default function ProjectComponent() {
         >
           <Flex position="relative" padding="10" alignItems={"center"}>
             <Divider />
-            <AbsoluteCenter bg="white" px="4">
+            <AbsoluteCenter bg="whitesmoke" px="4">
               PROJECTS
             </AbsoluteCenter>
           </Flex>

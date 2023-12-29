@@ -13,7 +13,7 @@ import certificateList from "../../../assets/CertificateList/CertificateList";
 export default function CertificateComponent() {
   return (
     <Container maxW={"7xl"} mt={8}>
-      <Box bg={"white"} boxShadow={"2xl"} rounded={"xl"} p={8}>
+      <Box bg={"whitesmoke"} boxShadow={"2xl"} rounded={"xl"} p={8}>
         <Heading
           textAlign={"center"}
           fontSize={{ base: "3xl", md: "4xl" }}
@@ -21,7 +21,7 @@ export default function CertificateComponent() {
         >
           <Flex position="relative" padding="10" alignItems={"center"}>
             <Divider />
-            <AbsoluteCenter bg="white" px="4">
+            <AbsoluteCenter bg={"whitesmoke"} px="4">
               CERTIFICATES
             </AbsoluteCenter>
           </Flex>
@@ -30,7 +30,7 @@ export default function CertificateComponent() {
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing={{ base: 5, lg: 8 }}
         >
-          {certificateList.map((certificate) => (
+          {certificateList.reverse().map((certificate) => (
             <CertificateCard
               key={certificate.id}
               from={certificate.from}

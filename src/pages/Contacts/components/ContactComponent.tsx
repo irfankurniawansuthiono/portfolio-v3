@@ -8,6 +8,7 @@ import {
   useClipboard,
   VStack,
 } from "@chakra-ui/react";
+import "animate.css";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 const confetti = {
@@ -38,6 +39,7 @@ export default function ContactComponent() {
         borderRadius="lg"
         m={{ base: 5, md: 16, lg: 10 }}
         p={{ base: 5, lg: 16 }}
+        className="animate__animated animate__fadeIn"
       >
         <Box>
           <VStack spacing={{ base: 4, md: 8 }}>

@@ -5,15 +5,11 @@ import {
   Text,
   Stack,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+  Image,
 } from "@chakra-ui/react";
-import { CgChevronDown } from "react-icons/cg";
-import { TbView360 } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { VscPreview } from "react-icons/vsc";
 type CertificateCardProps = {
   category: string;
   title: string;
@@ -38,14 +34,14 @@ export default function ProjectCard({
         maxW={"445px"}
         w={"full"}
         // eslint-disable-next-line react-hooks/rules-of-hooks
-        bg={"white"}
+        bg={"#FFFFF2"}
         boxShadow={"2xl"}
         rounded={"xl"}
         p={6}
         overflow={"hidden"}
       >
         <Box h={"100%"} bg={"gray.100"} mt={-6} mx={-6} mb={6} pos={"relative"}>
-          <img src={img} alt={altImg} />
+          <Image loading="lazy" src={img} alt={altImg} />
         </Box>
         <Stack>
           <Text
@@ -60,40 +56,30 @@ export default function ProjectCard({
           <Heading
             // eslint-disable-next-line react-hooks/rules-of-hooks
             color={"gray.700"}
-            fontSize={"2xl"}
+            fontSize={{ base: "md", sm: "lg", md: "2xl" }}
             fontFamily={"body"}
           >
             {title}
           </Heading>
-          <Menu isLazy>
-            <MenuButton
-              as={Button}
-              rightIcon={<CgChevronDown />}
+          <Stack direction={{ base: "column", md: "row" }}>
+            <Button
+              leftIcon={<VscPreview />}
+              as={Link}
+              to={liveView}
               colorScheme="yellow"
             >
-              Actions
-            </MenuButton>
-            <MenuList>
-              {repository ? (
-                <MenuItem
-                  icon={<FaGithub />}
-                  as={Link}
-                  target={"_blank"}
-                  to={repository}
-                >
-                  Repository
-                </MenuItem>
-              ) : null}
-              <MenuItem
-                icon={<TbView360 />}
-                as={Link}
-                to={liveView}
-                target={"_blank"}
-              >
-                Live-preview
-              </MenuItem>
-            </MenuList>
-          </Menu>
+              Live View
+            </Button>
+            {repository ? (
+              <Button leftIcon={<FaGithub />} as={Link} to={repository}>
+                Repository
+              </Button>
+            ) : (
+              <Button leftIcon={<FaGithub />} as={Link} isDisabled>
+                Repository
+              </Button>
+            )}
+          </Stack>
         </Stack>
         <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
           <Text color={"gray.500"}>{dateFinished}</Text>

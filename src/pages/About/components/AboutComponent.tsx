@@ -5,18 +5,19 @@ export const AboutComponent = () => {
   return (
     <Container maxW={"7xl"}>
       <Flex
-        flexDir={{ base: "column", md: "row" }}
+        flexDir={{ base: "column", lg: "row" }}
         gap={10}
         alignItems={"center"}
+        className="animate__animated animate__fadeIn"
       >
         <Box
-          bg={"white"}
+          bg={"whitesmoke"}
           boxShadow={"2xl"}
           rounded={"xl"}
           p={8}
-          w={{ base: "100%", md: "50%" }}
+          w={{ base: "100%", lg: "50%" }}
         >
-          <Flex flexDir={"column"} gap={5}>
+          <Flex flexDir={"column"} gap={5} h={"full"}>
             <Heading
               textAlign={"center"}
               bgColor={"yellow.400"}
@@ -26,7 +27,7 @@ export const AboutComponent = () => {
             >
               About Me
             </Heading>
-            <Text as={"p"} textAlign={"left"}>
+            <Text as={"p"} textAlign={"left"} lineHeight={"tall"}>
               Greetings! I'm irfan kurniawan suthiono, an enthusiastic React
               developer diving into the world of front-end development. As a
               passionate learner in the field, I'm on a journey to master the
@@ -53,7 +54,7 @@ export const AboutComponent = () => {
           >
             Profile
           </Heading>
-          <Box bg={"white"} boxShadow={"2xl"} rounded={"xl"} p={8}>
+          <Box bg={"whitesmoke"} boxShadow={"2xl"} rounded={"xl"} p={8}>
             <Flex
               justifyContent={"flex-start"}
               alignItems={"center"}
@@ -64,9 +65,17 @@ export const AboutComponent = () => {
                 rounded={"2xl"}
                 src="/home/profile-picture.jpg"
                 alt="Profile Picture"
-                w={{ base: "100%", md: "20%" }}
+                w={{ base: "100%", md: "25%" }}
+                loading="lazy"
               />
-              <Flex flexDir={"column"} gap={1}>
+              <Flex
+                flexDir={"column"}
+                gap={1}
+                p={5}
+                bgColor={"gray.200"}
+                rounded={"2xl"}
+                w={"full"}
+              >
                 <table>
                   <tbody>
                     <tr>
@@ -87,7 +96,7 @@ export const AboutComponent = () => {
                     <tr>
                       <td>Address</td>
                       <td>:</td>
-                      <td>Padang, Sumatera Barat, Indonesia</td>
+                      <td>Padang, Sumatera Barat</td>
                     </tr>
                     <tr>
                       <td>Status</td>
@@ -108,7 +117,7 @@ export const AboutComponent = () => {
           >
             Tech Stack
           </Heading>
-          <Box bg={"white"} boxShadow={"2xl"} rounded={"xl"} p={8}>
+          <Box bg={"whitesmoke"} boxShadow={"2xl"} rounded={"xl"} p={8}>
             <Flex
               justifyContent={"space-between"}
               alignItems={"center"}
