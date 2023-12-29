@@ -105,7 +105,7 @@ export const HomeComponent = () => {
             <Flex
               gap={5}
               mt={2}
-              justifyContent={{ base: "space-between", md: "left" }}
+              justifyContent={{ base: "space-around", sm: "left" }}
             >
               {socialMediaLiat.map((item) => (
                 <Button
