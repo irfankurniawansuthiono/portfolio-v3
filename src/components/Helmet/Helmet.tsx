@@ -85,18 +85,6 @@ export default function HelmetMetaTag() {
       <meta name="theme-color" content="#ffffff" />
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      {/* meta OG */}
-      <meta property="og:title" content="Irfan Kurniawan | Personal Website" />
-      <meta
-        property="og:description"
-        content="Personal website of Irfan Kurniawan Suthiono | Portfolio. This is the website about my self and where I share all of my projects."
-      />
-      <meta
-        property="og:image"
-        content="https://www.irfanks.my.id/home/profile-picture.webp"
-      />
-      <meta property="og:url" content="https://www.irfanks.my.id" />
     </Helmet>
   );
 }
