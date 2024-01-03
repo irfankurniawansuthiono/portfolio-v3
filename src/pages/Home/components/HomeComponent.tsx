@@ -156,7 +156,6 @@ export const HomeComponent = () => {
             rounded={"2xl"}
           >
             <Image
-              loading="lazy"
               rounded={"2xl"}
               src="/home/profile-picture.webp"
               alt="Profile Picture"

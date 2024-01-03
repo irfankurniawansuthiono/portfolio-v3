@@ -30,16 +30,19 @@ export default function CertificateComponent() {
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing={{ base: 5, lg: 8 }}
         >
-          {certificateList.reverse().map((certificate) => (
-            <CertificateCard
-              key={certificate.id}
-              from={certificate.from}
-              title={certificate.title}
-              img={certificate.img}
-              altImg={certificate.altImg}
-              dateObtained={certificate.dateObtained}
-            />
-          ))}
+          {certificateList
+            .slice()
+            .reverse()
+            .map((certificate) => (
+              <CertificateCard
+                key={certificate.id}
+                from={certificate.from}
+                title={certificate.title}
+                img={certificate.img}
+                altImg={certificate.altImg}
+                dateObtained={certificate.dateObtained}
+              />
+            ))}
         </SimpleGrid>
       </Box>
     </Container>

@@ -39,6 +39,14 @@ const certificateList = [
     altImg: "Certificate 5",
     dateObtained: "2023-12-25",
   },
+  {
+    id: 6,
+    from: "Alibaba ECS",
+    title: "Deploy MySQL Database on an ECS",
+    img: "/home/certificates/certificate_6.webp",
+    altImg: "Certificate 6",
+    dateObtained: "2024-01-03",
+  },
 ];
 
 export default certificateList;

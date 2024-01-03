@@ -26,7 +26,7 @@ export default function CertificateCard({
         overflow={"hidden"}
       >
         <Box h={"100%"} bg={"gray.200"} mt={-6} mx={-6} mb={6} pos={"relative"}>
-          <Image loading="lazy" src={img} alt={altImg} />
+          <Image src={img} alt={altImg} />
         </Box>
         <Stack>
           <Text

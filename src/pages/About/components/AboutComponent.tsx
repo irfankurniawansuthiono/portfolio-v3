@@ -114,6 +114,7 @@ export const AboutComponent = () => {
             rounded={"2xl"}
             size={"lg"}
             py={1}
+            mt={{ base: 5, lg: 0 }}
           >
             Tech Stack
           </Heading>

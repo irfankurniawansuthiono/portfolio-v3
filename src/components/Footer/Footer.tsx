@@ -16,7 +16,9 @@ export default function Footer() {
         p={{ base: 5, sm: 4 }}
         rounded={"2xl"}
       >
-        <Text as={"p"}>&copy;{year} irfan kurniawan suthiono</Text>
+        <Text as={"p"} fontWeight={"bold"}>
+          &copy;{year} Irfan Kurniawan Suthiono
+        </Text>
       </Box>
     </Container>
   );
