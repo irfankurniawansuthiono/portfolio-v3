@@ -4,6 +4,7 @@ import {
   Text,
   Heading,
   Button,
+  IconButton,
   Flex,
   Icon,
   Image,
@@ -22,24 +23,28 @@ export const HomeComponent = () => {
       icon: <FaLinkedin />,
       url: "https://www.linkedin.com/in/irfan-kurniawan-suthiono/",
       colorScheme: "linkedin",
+      name: "LinkedIn",
     },
     {
       id: 2,
       icon: <FaGithub />,
       url: "https://github.com/irfankurniawansuthiono",
       colorScheme: "blackAlpha",
+      name: "GitHub",
     },
     {
       id: 3,
       icon: <FaWhatsapp />,
       url: "https://wa.me/6281234567890",
       colorScheme: "whatsapp",
+      name: "WhatsApp",
     },
     {
       id: 4,
       icon: <AiFillInstagram />,
       url: "https://www.instagram.com/irfan_suthiono",
       colorScheme: "pink",
+      name: "Instagram",
     },
   ];
   return (
@@ -68,15 +73,14 @@ export const HomeComponent = () => {
                 fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 textAlign={{ base: "center", md: "left" }}
               >
-                <Text as={"h1"}>Hi, I'm </Text>
+                Hi, I'm
               </Heading>
               <Heading
                 fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 textAlign={{ base: "center", md: "left" }}
+                color={"yellow.400"}
               >
-                <Text as={"h4"} color={"yellow.400"}>
-                  Irfan Kurniawan Suthiono
-                </Text>
+                Irfan Kurniawan Suthiono
               </Heading>
 
               <Flex
@@ -108,16 +112,16 @@ export const HomeComponent = () => {
               justifyContent={{ base: "space-around", sm: "left" }}
             >
               {socialMediaLiat.map((item) => (
-                <Button
+                <IconButton
                   key={item.id}
                   rounded={"xl"}
                   colorScheme={item.colorScheme}
                   as={"a"}
                   target={"_blank"}
                   href={item.url}
-                >
-                  {item.icon}
-                </Button>
+                  aria-label={item.name}
+                  icon={item.icon}
+                />
               ))}
             </Flex>
             <Flex

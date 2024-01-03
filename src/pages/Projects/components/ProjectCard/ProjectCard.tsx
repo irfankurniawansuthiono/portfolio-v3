@@ -61,17 +61,23 @@ export default function ProjectCard({
           >
             {title}
           </Heading>
-          <Stack direction={{ base: "column", sm: "row" }}>
+          <Stack direction={"row"}>
             <Button
               leftIcon={<VscPreview />}
               as={Link}
               to={liveView}
               colorScheme="yellow"
+              fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
             >
-              Live View
+              Preview
             </Button>
             {repository ? (
-              <Button leftIcon={<FaGithub />} as={Link} to={repository}>
+              <Button
+                leftIcon={<FaGithub />}
+                as={Link}
+                to={repository}
+                fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
+              >
                 Repository
               </Button>
             ) : (

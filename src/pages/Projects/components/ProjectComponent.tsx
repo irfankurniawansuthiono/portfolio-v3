@@ -25,14 +25,23 @@ export default function ProjectComponent() {
           fontSize={{ base: "3xl", md: "4xl" }}
           color={"yellow.400"}
         >
-          <Flex position="relative" padding="10" alignItems={"center"}>
-            <Divider />
-            <AbsoluteCenter bg="whitesmoke" px="4">
+          <Flex
+            position="relative"
+            px={{ base: "0", sm: 5, md: 10, lg: "20" }}
+            py={5}
+            alignItems={"center"}
+          >
+            <Divider borderColor={"yellow.400"} />
+            <AbsoluteCenter bg={"whitesmoke"} px="4">
               PROJECTS
             </AbsoluteCenter>
           </Flex>
         </Heading>
+        <Heading textAlign={"center"} as="h6" size="xs">
+          Total : {ProjectList.length} Projects
+        </Heading>
         <SimpleGrid
+          mt={{ base: 5, lg: 10 }}
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing={{ base: 5, lg: 8 }}
         >

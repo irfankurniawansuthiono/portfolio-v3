@@ -45,10 +45,7 @@ export default function ContactComponent() {
           <VStack spacing={{ base: 4, md: 8 }}>
             <Heading
               color={"yellow.400"}
-              fontSize={{
-                base: "4xl",
-                md: "5xl",
-              }}
+              fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
               rounded={"2xl"}
               outline={"1px solid black"}
               p={{ base: 2, md: 4 }}

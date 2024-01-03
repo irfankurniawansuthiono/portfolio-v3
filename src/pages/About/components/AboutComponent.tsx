@@ -79,29 +79,92 @@ export const AboutComponent = () => {
                 <table>
                   <tbody>
                     <tr>
-                      <td>Name</td>
-                      <td>:</td>
-                      <td>Irfan Kurniawan Suthiono</td>
+                      <td>
+                        <Text
+                          fontWeight={"bold"}
+                          fontSize={{ base: "sm", sm: "md" }}
+                        >
+                          Name
+                        </Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>:</Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>
+                          Irfan Kurniawan Suthiono
+                        </Text>
+                      </td>
                     </tr>
                     <tr>
-                      <td>Age</td>
-                      <td>:</td>
-                      <td>{year - 2004} years old</td>
+                      <td>
+                        <Text
+                          fontWeight={"bold"}
+                          fontSize={{ base: "sm", sm: "md" }}
+                        >
+                          Age
+                        </Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>:</Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>
+                          {year - 2004} years old
+                        </Text>
+                      </td>
                     </tr>
                     <tr>
-                      <td>Gender</td>
-                      <td>:</td>
-                      <td>Male</td>
+                      <td>
+                        <Text
+                          fontWeight={"bold"}
+                          fontSize={{ base: "sm", sm: "md" }}
+                        >
+                          Gender
+                        </Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>: </Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>Male</Text>
+                      </td>
                     </tr>
                     <tr>
-                      <td>Address</td>
-                      <td>:</td>
-                      <td>Padang, Sumatera Barat</td>
+                      <td>
+                        <Text
+                          fontWeight={"bold"}
+                          fontSize={{ base: "sm", sm: "md" }}
+                        >
+                          Address
+                        </Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>:</Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>
+                          Padang, Sumatra Barat
+                        </Text>
+                      </td>
                     </tr>
                     <tr>
-                      <td>Status</td>
-                      <td>:</td>
-                      <td>Not Married</td>
+                      <td>
+                        <Text
+                          fontWeight={"bold"}
+                          fontSize={{ base: "sm", sm: "md" }}
+                        >
+                          Nationality
+                        </Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>:</Text>
+                      </td>
+                      <td>
+                        <Text fontSize={{ base: "sm", sm: "md" }}>
+                          Indonesia
+                        </Text>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
