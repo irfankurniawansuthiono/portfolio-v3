@@ -2,7 +2,7 @@ const ProjectList = [
   {
     id: 1,
     category: "Blog",
-    title: "First Website i ever created",
+    title: "First Website",
     img: "/projects/1.webp",
     altImg: "1.webp",
     dateFinished: "2018",

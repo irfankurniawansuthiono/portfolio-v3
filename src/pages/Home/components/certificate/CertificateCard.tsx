@@ -42,7 +42,7 @@ export default function CertificateCard({
             // eslint-disable-next-line react-hooks/rules-of-hooks
             color={"gray.700"}
             fontFamily={"body"}
-            fontSize={{ base: "md", sm: "lg", md: "2xl" }}
+            fontSize={{ base: "md", sm: "2xl" }}
           >
             {title}
           </Heading>

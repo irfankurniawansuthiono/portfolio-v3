@@ -56,7 +56,7 @@ export default function ProjectCard({
           <Heading
             // eslint-disable-next-line react-hooks/rules-of-hooks
             color={"gray.700"}
-            fontSize={{ base: "md", sm: "lg", md: "2xl" }}
+            fontSize={{ base: "md", sm: "2xl" }}
             fontFamily={"body"}
           >
             {title}
