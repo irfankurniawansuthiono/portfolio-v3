@@ -21,7 +21,7 @@ export const HomeComponent = () => {
     {
       id: 1,
       icon: <FaLinkedin />,
-      url: "https://www.linkedin.com/in/irfan-kurniawan-suthiono/",
+      url: "https://www.linkedin.com/in/irfankurniawans",
       colorScheme: "linkedin",
       name: "LinkedIn",
     },
