@@ -15,7 +15,7 @@ export const AboutComponent = () => {
           boxShadow={"2xl"}
           rounded={"xl"}
           p={8}
-          w={{ base: "100%", lg: "50%" }}
+          w={{ base: "100%"}}
         >
           <Flex flexDir={"column"} gap={5} h={"full"}>
             <Heading
