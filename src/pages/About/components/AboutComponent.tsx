@@ -188,9 +188,7 @@ export const AboutComponent = () => {
               flexWrap={"wrap"}
             >
               {TechStackList.map((item, index) => (
-                <Image 
-                  w={{ base: "25%", sm: "10%", md: "10%" }}
-                  key={index} src={item.src} alt={item.alt} />
+                <Image w={{ base: "25%", sm: "10%", md: "10%" }} key={index} src={item.src} alt={item.alt} />
               ))}
             </Flex>
           </Box>
