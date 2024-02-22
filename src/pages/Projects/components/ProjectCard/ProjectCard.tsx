@@ -67,7 +67,7 @@ export default function ProjectCard({
               as={Link}
               to={liveView}
               colorScheme="yellow"
-              fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
+              fontSize={{ base: "sm", sm: "md", md: "lg" }}
             >
               Preview
             </Button>
@@ -76,7 +76,7 @@ export default function ProjectCard({
                 leftIcon={<FaGithub />}
                 as={Link}
                 to={repository}
-                fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
+                fontSize={{ base: "sm", sm: "md", md: "lg" }}
               >
                 Repository
               </Button>
