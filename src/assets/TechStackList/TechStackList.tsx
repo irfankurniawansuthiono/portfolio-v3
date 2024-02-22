@@ -27,6 +27,10 @@ const TechStackList = [
     src: "https://img.icons8.com/color/96/chakra-ui.png",
     alt: "chakra-ui-logo",
   },
+  {
+    src: "https://img.icons8.com/ios/50/express-js.png",
+    alt: "ExpressJS-logo",
+  },
 ];
 
 export default TechStackList;
