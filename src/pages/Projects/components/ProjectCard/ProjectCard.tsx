@@ -61,7 +61,7 @@ export default function ProjectCard({
           >
             {title}
           </Heading>
-          <Stack direction={"row"}>
+          <Stack direction={"row"} justifyContent={"space-around"}>
             <Button
               leftIcon={<VscPreview />}
               as={Link}
