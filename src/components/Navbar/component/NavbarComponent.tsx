@@ -53,7 +53,7 @@ export const NavbarComponent = () => {
                 bgColor={
                   location.pathname === item.path ? "yellow.400" : "gray.200"
                 }
-                _hover={{ bgColor: "none", opacity: 0.7 }}
+                _hover={{ base: { opacity: 1 }, xl: { opacity: 0.6 } }}
               >
                 <Flex alignItems={"center"} gap={2}>
                   <Icon as={item.icon} />

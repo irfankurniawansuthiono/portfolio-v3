@@ -1,0 +1,7 @@
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* Warna latar belakang track */
+}
+body {
+  scrollbar-color: #ECC94B transparent; /* Warna handle dan track */
+  scrollbar-width: thin; /* Atur lebar scroll bar */
+}

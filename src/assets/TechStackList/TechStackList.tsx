@@ -31,7 +31,7 @@ const TechStackList = [
     src: "https://img.icons8.com/ios/96/express-js.png",
     alt: "ExpressJS-logo",
   },
-    {
+  {
     src: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png",
     alt: "MongoDB-logo",
   },

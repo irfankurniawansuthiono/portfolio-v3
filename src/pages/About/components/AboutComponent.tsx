@@ -15,7 +15,7 @@ export const AboutComponent = () => {
           boxShadow={"2xl"}
           rounded={"xl"}
           p={8}
-          w={{ base: "100%"}}
+          w={{ base: "100%" }}
         >
           <Flex flexDir={"column"} gap={5} h={"full"}>
             <Heading
@@ -65,7 +65,7 @@ export const AboutComponent = () => {
                 rounded={"2xl"}
                 src="/home/profile-picture.webp"
                 alt="Profile Picture"
-                w={{ base: "100%", md: "25%" }}
+                w={{ base: "70%", md: "25%" }}
                 loading="lazy"
               />
               <Flex
@@ -185,10 +185,19 @@ export const AboutComponent = () => {
             <Flex
               justifyContent={"space-between"}
               alignItems={"center"}
-              flexWrap={"wrap"}
+              flexWrap={"nowrap"}
+              overflowX={"auto"}
+              gap={2}
+              pb={3}
+              scroll-background={"red.100"}
             >
               {TechStackList.map((item, index) => (
-                <Image w={{ base: "25%", sm: "10%", md: "10%" }} key={index} src={item.src} alt={item.alt} />
+                <Image
+                  w={{ base: "25%", sm: "10%", md: "10%" }}
+                  key={index}
+                  src={item.src}
+                  alt={item.alt}
+                />
               ))}
             </Flex>
           </Box>
