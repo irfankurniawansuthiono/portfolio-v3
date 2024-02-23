@@ -36,7 +36,7 @@ const TechStackList = [
     alt: "MongoDB-logo",
   },
   {
-    src: "https://img.icons8.com/color/48/mongoose.png",
+    src: "https://img.icons8.com/color/96/mongoose.png",
     alt: "Mongoose-logo",
   },
 ];
