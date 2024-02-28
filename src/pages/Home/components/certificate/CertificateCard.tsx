@@ -1,4 +1,12 @@
-import { Box, Center, Heading, Text, Stack, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Heading,
+  Text,
+  Stack,
+  Image,
+  HStack,
+} from "@chakra-ui/react";
 type CertificateCardProps = {
   from: string;
   title: string;
@@ -24,20 +32,24 @@ export default function CertificateCard({
         rounded={"xl"}
         p={6}
         overflow={"hidden"}
+        h={"100%"}
       >
-        <Box h={"100%"} bg={"gray.200"} mt={-6} mx={-6} mb={6} pos={"relative"}>
+        <Box bg={"gray.200"} mt={-6} mx={-6} mb={6} pos={"relative"}>
           <Image src={img} alt={altImg} />
         </Box>
         <Stack>
-          <Text
-            color={"yellow.400"}
-            textTransform={"uppercase"}
-            fontWeight={800}
-            fontSize={"sm"}
-            letterSpacing={1.1}
-          >
-            {from}
-          </Text>
+          <HStack justifyContent={"space-between"} alignItems={"center"}>
+            <Text
+              color={"yellow.400"}
+              textTransform={"uppercase"}
+              fontWeight={800}
+              fontSize={"sm"}
+              letterSpacing={1.1}
+            >
+              {from}
+            </Text>
+            <Text color={"gray.500"}>{dateObtained}</Text>
+          </HStack>
           <Heading
             // eslint-disable-next-line react-hooks/rules-of-hooks
             color={"gray.700"}
@@ -46,11 +58,6 @@ export default function CertificateCard({
           >
             {title}
           </Heading>
-        </Stack>
-        <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
-          <Stack direction={"column"} spacing={0} fontSize={"sm"}>
-            <Text color={"gray.500"}>{dateObtained}</Text>
-          </Stack>
         </Stack>
       </Box>
     </Center>
