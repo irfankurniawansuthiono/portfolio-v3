@@ -142,12 +142,14 @@ export const HomeComponent = () => {
               w={"full"}
               flexDir={{ base: "column", sm: "row" }}
             >
-              <Button
+               <Button
+                as={"a"}
+                href="cv/irfan-kurniawan-suthiono-cv.pdf"
+                download={"irfan-kurniawan-suthiono-cv.pdf"}
                 w={{ base: "100%", md: "50%" }}
                 colorScheme={"yellow"}
                 onClick={() => {}}
                 rounded={"xl"}
-                isDisabled
                 leftIcon={<IoMdDownload />}
               >
                 CV Download
