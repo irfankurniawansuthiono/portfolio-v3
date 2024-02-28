@@ -98,7 +98,7 @@ export const HomeComponent = () => {
                 alignItems={"center"}
                 justifyContent={{ base: "flex-start", sm: "center" }}
               >
-                <Text>Active Student in &nbsp;</Text>
+                <Text>Active Student at&nbsp;</Text>
                 <Box
                   as={"a"}
                   target="_blank"
@@ -107,7 +107,7 @@ export const HomeComponent = () => {
                   _hover={{ color: "red.600" }}
                   href="https://www.google.co.id/maps/place/Universitas+Putra+Indonesia+%22YPTK%22,+Jl.+Raya+Lubuk+Begalung,+Lubuk+Begalung+Nan+XX,+Kec.+Lubuk+Begalung,+Kota+Padang,+Sumatera+Barat+25145/@-0.9591213,100.396741,17z/data=!4m6!3m5!1s0x2fd4b982fd776c89:0x4e9e1c8dcc9c55fb!8m2!3d-0.9591213!4d100.396741!16s%2Fg%2F1pzvxj4yp"
                 >
-                  <Flex fontSize={{ base: "sm" }} alignItems={"center"}>
+                  <Flex fontSize={{ base: "sm", sm: "md" }} alignItems={"center"}>
                     UPI YPTK Padang <Icon as={MdOpenInNew} ml={1} />
                   </Flex>
                 </Box>
