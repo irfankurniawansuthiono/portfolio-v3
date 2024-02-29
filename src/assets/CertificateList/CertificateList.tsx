@@ -206,6 +206,21 @@ const certificateList = [
     img: "/home/certificates/certificate_26.webp",
     altImg: "Certificate 26",
     dateObtained: "2024-02-28",
+  },{
+    id: 27,
+    from: "CODEPOLITAN",
+    title: "Manajemen Route dan Cookies di ExpressJS",
+    img: "/home/certificates/certificate_27.webp",
+    altImg: "Certificate 27",
+    dateObtained: "2024-02-29",
+  },
+  {
+    id: 28,
+    from: "CODEPOLITAN",
+    title: "Manajemen Hot Data dengan Session di ExpressJS",
+    img: "/home/certificates/certificate_28.webp",
+    altImg: "Certificate 28",
+    dateObtained: "2024-02-29",
   },
 ];
 
