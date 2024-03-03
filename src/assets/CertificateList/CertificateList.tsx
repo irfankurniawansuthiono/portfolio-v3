@@ -228,7 +228,7 @@ const certificateList = [
     title: "Belajar Konsep Auth dan Implementasi di Express.js",
     img: "/home/certificates/certificate_28.webp",
     altImg: "Certificate 28",
-    dateObtained: "2024-02-29",
+    dateObtained: "2024-03-03",
   },
 ];
 
