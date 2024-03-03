@@ -222,6 +222,14 @@ const certificateList = [
     altImg: "Certificate 28",
     dateObtained: "2024-02-29",
   },
+  {
+    id: 29,
+    from: "CODEPOLITAN",
+    title: "Belajar Konsep Auth dan Implementasi di Express.js",
+    img: "/home/certificates/certificate_28.webp",
+    altImg: "Certificate 28",
+    dateObtained: "2024-02-29",
+  },
 ];
 
 export default certificateList;
