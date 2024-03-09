@@ -206,7 +206,8 @@ const certificateList = [
     img: "/home/certificates/certificate_26.webp",
     altImg: "Certificate 26",
     dateObtained: "2024-02-28",
-  },{
+  },
+  {
     id: 27,
     from: "CODEPOLITAN",
     title: "Manajemen Route dan Cookies di ExpressJS",
@@ -226,9 +227,17 @@ const certificateList = [
     id: 29,
     from: "CODEPOLITAN",
     title: "Belajar Konsep Auth dan Implementasi di Express.js",
-    img: "/home/certificates/certificate_28.webp",
-    altImg: "Certificate 28",
+    img: "/home/certificates/certificate_29.webp",
+    altImg: "Certificate 29",
     dateObtained: "2024-03-03",
+  },
+  {
+    id: 30,
+    from: "IDCAMP 2023",
+    title: "Kelulusan IDCAMP 2023 - Level Intermediate",
+    img: "/home/certificates/certificate_30.webp",
+    altImg: "Certificate 30",
+    dateObtained: "2024-02-08",
   },
 ];
 
