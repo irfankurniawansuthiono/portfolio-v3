@@ -237,7 +237,7 @@ const certificateList = [
     title: "Kelulusan IDCAMP 2023 - Level Intermediate",
     img: "/home/certificates/certificate_30.webp",
     altImg: "Certificate 30",
-    dateObtained: "2024-02-08",
+    dateObtained: "2024-03-08",
   },
 ];
 
