@@ -35,7 +35,7 @@ export const HomeComponent = () => {
     {
       id: 3,
       icon: <FaWhatsapp />,
-      url: "https://wa.me/6281234567890",
+      url: "https://wa.me/6285159411104",
       colorScheme: "whatsapp",
       name: "WhatsApp",
     },
