@@ -143,7 +143,7 @@ const ProjectList = [
     dateFinished: "2023",
     liveView: "https://irfanks.vercel.app/",
     repository:
-      "https://github.com/irfankurniawansuthiono/portfolio-v3/tree/Source-Code",
+      "https://github.com/irfankurniawansuthiono/portfolio-v3",
   },
   {
     id: 15,
@@ -153,7 +153,7 @@ const ProjectList = [
     altImg: "15.webp",
     dateFinished: "2024",
     repository:
-      "https://github.com/irfankurniawansuthiono/portfolio-v3/tree/Source-Code",
+      "https://github.com/irfankurniawansuthiono/form-mobileApps",
   },
 ];
 
