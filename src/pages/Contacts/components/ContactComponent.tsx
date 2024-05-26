@@ -96,7 +96,7 @@ export default function ContactComponent() {
 
                 <Box
                   as="a"
-                  href="https://www.linkedin.com/in/irfan-kurniawan-suthiono/"
+                  href="https://www.linkedin.com/in/irfankurniawans"
                   target={"_blank"}
                 >
                   <IconButton
