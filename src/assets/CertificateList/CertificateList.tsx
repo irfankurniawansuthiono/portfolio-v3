@@ -239,6 +239,22 @@ const certificateList = [
     altImg: "Certificate 30",
     dateObtained: "2024-02-08",
   },
+   {
+    id: 31,
+    from: "DBS FOUNDATION X DICODING",
+    title: "Belajar Dasar Visualisasi Data",
+    img: "/home/certificates/certificate_31.webp",
+    altImg: "Certificate 31",
+    dateObtained: "2024-05-30",
+  },
+   {
+    id: 32,
+    from: "DBS FOUNDATION X DICODING",
+    title: "Memulai Pemrograman dengan Python",
+    img: "/home/certificates/certificate_32.webp",
+    altImg: "Certificate 32",
+    dateObtained: "2024-05-31",
+  },
 ];
 
 export default certificateList;
