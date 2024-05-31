@@ -241,7 +241,7 @@ const certificateList = [
   },
    {
     id: 31,
-    from: "DBS FOUNDATION X DICODING",
+    from: "DBS FOUNDATION CC 2024",
     title: "Belajar Dasar Visualisasi Data",
     img: "/home/certificates/certificate_31.webp",
     altImg: "Certificate 31",
@@ -249,7 +249,7 @@ const certificateList = [
   },
    {
     id: 32,
-    from: "DBS FOUNDATION X DICODING",
+    from: "DBS FOUNDATION CC 2024",
     title: "Memulai Pemrograman dengan Python",
     img: "/home/certificates/certificate_32.webp",
     altImg: "Certificate 32",
