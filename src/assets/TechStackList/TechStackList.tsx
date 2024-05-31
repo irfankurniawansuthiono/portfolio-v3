@@ -12,12 +12,16 @@ const TechStackList = [
     alt: "javascript-logo",
   },
   {
-    src: "https://img.icons8.com/ultraviolet/80/react--v1.png",
-    alt: "react-logo",
+    src: "https://img.icons8.com/color/96/python--v2.pngX/python",
+    alt: "python-logo",
   },
   {
     src: "https://img.icons8.com/color/96/typescript.png",
     alt: "typescript-logo",
+  },
+  {
+    src: "https://img.icons8.com/ultraviolet/80/react--v1.png",
+    alt: "react-logo",
   },
   {
     src: "https://img.icons8.com/fluency/96/node-js.png",

@@ -13,7 +13,7 @@ import certificateList from "../../../assets/CertificateList/CertificateList";
 export default function CertificateComponent() {
   return (
     <Container maxW={"7xl"} mt={8}>
-      <Box bg={"whitesmoke"} boxShadow={"2xl"} rounded={"xl"} p={8}>
+      <Box bg={"whitesmoke"} boxShadow={"xl"} rounded={"xl"} p={8}>
         <Heading
           textAlign={"center"}
           fontSize={{ base: "3xl", md: "4xl" }}

@@ -16,8 +16,14 @@ export default function Footer() {
         p={{ base: 5, sm: 4 }}
         rounded={"2xl"}
       >
-        <Text as={"p"} fontWeight={"bold"}>
+        <Text as={"p"} fontSize={"xs"}>
           &copy;{year} Irfan Kurniawan Suthiono
+        </Text>
+        <Text as={"p"} fontSize={"xs"} color={"gray.500"}>
+          Icons by{" "}
+          <Text as={"a"} href="https://icons8.com" textDecoration={"underline"}>
+            Icons8
+          </Text>
         </Text>
       </Box>
     </Container>

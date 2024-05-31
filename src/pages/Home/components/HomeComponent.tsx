@@ -51,7 +51,7 @@ export const HomeComponent = () => {
     <Container maxW={"7xl"}>
       <Box
         bg={"whitesmoke"}
-        boxShadow={"2xl"}
+        boxShadow={"xl"}
         rounded={"xl"}
         p={8}
         className={"animate__animated animate__fadeIn"}
