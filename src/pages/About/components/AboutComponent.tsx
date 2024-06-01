@@ -14,7 +14,6 @@ import { Link } from "react-router-dom";
 import { GrProjects } from "react-icons/gr";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "./styles.css";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -91,7 +90,7 @@ export const AboutComponent = () => {
                     </td>
                     <td>
                       <Text fontSize={{ base: "sm", sm: "md" }}>
-                        Irfan Kurniawan Suthiono
+                        Irfan Kurniawan
                       </Text>
                     </td>
                   </tr>

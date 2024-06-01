@@ -35,7 +35,7 @@ export default function ProjectCard({
         w={"full"}
         // eslint-disable-next-line react-hooks/rules-of-hooks
         bg={"white"}
-        boxShadow={"2xl"}
+        boxShadow={"xl"}
         rounded={"xl"}
         p={6}
         overflow={"hidden"}

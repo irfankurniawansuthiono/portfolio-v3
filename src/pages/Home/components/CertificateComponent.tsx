@@ -8,7 +8,6 @@ import {
   AbsoluteCenter,
 } from "@chakra-ui/react";
 import CertificateCard from "./certificate/CertificateCard";
-
 import certificateList from "../../../assets/CertificateList/CertificateList";
 export default function CertificateComponent() {
   return (
@@ -35,9 +34,11 @@ export default function CertificateComponent() {
           Total : {certificateList.length} Certificates
         </Heading>
         <SimpleGrid
-          mt={{ base: 5, lg: 10 }}
+          // mt={{ base: 5, lg: 10 }}
           columns={{ base: 1, md: 2, lg: 3 }}
-          spacing={{ base: 5, lg: 8 }}
+          // spacing={{ base: 5, lg: 8 }}
+          spacingY={0}
+          spacingX={{ base: 5, lg: 8 }}
         >
           {certificateList
             .slice()
@@ -45,6 +46,7 @@ export default function CertificateComponent() {
             .map((certificate) => (
               <CertificateCard
                 key={certificate.id}
+                id={certificate.id}
                 from={certificate.from}
                 title={certificate.title}
                 img={certificate.img}

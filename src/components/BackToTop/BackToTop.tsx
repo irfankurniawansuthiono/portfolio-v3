@@ -32,7 +32,6 @@ const BackToTop = () => {
         rounded="xl"
         onClick={scrollToTop}
         colorScheme="yellow"
-        // size={{ base: "md", md: "md", lg: "lg" }}
         _hover={{ bg: "yellow.500" }}
         _active={{ bg: "yellow.600" }}
         _focus={{ boxShadow: "outline" }}
