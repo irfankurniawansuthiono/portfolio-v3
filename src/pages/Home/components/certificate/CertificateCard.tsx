@@ -8,14 +8,7 @@ type CertificateCardProps = {
   altImg: string;
   dateObtained: string;
 };
-export default function CertificateCard({
-  id,
-  from,
-  title,
-  img,
-  altImg,
-  dateObtained,
-}: CertificateCardProps) {
+export default function CertificateCard({ img, altImg }: CertificateCardProps) {
   return (
     <>
       <Center
