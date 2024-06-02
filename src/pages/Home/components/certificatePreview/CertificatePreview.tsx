@@ -29,6 +29,7 @@ export default function CertificatePreview() {
   useOnClickOutside(ref, closeHandler);
   return (
     <Box
+      className="animate__animated animate__fadeIn"
       userSelect={"none"}
       top={0}
       left={0}
@@ -85,7 +86,7 @@ export default function CertificatePreview() {
             Navigation,
             HashNavigation,
           ]}
-          className="mySwiper"
+          className="animate__animated animate__slideInUp"
         >
           {certificateList
             .slice()

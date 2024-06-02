@@ -142,7 +142,7 @@ export const AboutComponent = () => {
                     </td>
                     <td>
                       <Text fontSize={{ base: "sm", sm: "md" }}>
-                        Padang, Sumatra Barat
+                        Padang, Sumatera Barat
                       </Text>
                     </td>
                   </tr>
