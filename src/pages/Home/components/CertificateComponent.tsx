@@ -33,11 +33,19 @@ export default function CertificateComponent() {
         <Heading textAlign={"center"} as="h6" size="xs">
           Total : {certificateList.length} Certificates
         </Heading>
+        <Heading
+          textAlign={"center"}
+          as="h6"
+          size="sm"
+          mt={5}
+          color={"gray.500"}
+        >
+          Click on certificate to preview
+        </Heading>
         <SimpleGrid
-          // mt={{ base: 5, lg: 10 }}
+          mt={{ base: 5, lg: 10 }}
           columns={{ base: 1, md: 2, lg: 3 }}
-          // spacing={{ base: 5, lg: 8 }}
-          spacingY={0}
+          spacingY={5}
           spacingX={{ base: 5, lg: 8 }}
         >
           {certificateList

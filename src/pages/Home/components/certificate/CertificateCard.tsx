@@ -1,4 +1,8 @@
 import { Box, Center, Image } from "@chakra-ui/react";
+import { useState } from "react";
+import { usePreviewCertificate } from "../../utils/zustand";
+import { Link } from "react-router-dom";
+import { IoMdEye } from "react-icons/io";
 
 type CertificateCardProps = {
   id: number;
@@ -8,49 +12,73 @@ type CertificateCardProps = {
   altImg: string;
   dateObtained: string;
 };
-export default function CertificateCard({ img, altImg }: CertificateCardProps) {
+
+export default function CertificateCard({
+  id,
+  img,
+  altImg,
+}: CertificateCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const clickHandle = () => {
+    // Move this hook usage inside the component
+    usePreviewCertificate.setState({ previewCertificate: true });
+    // Do something with the `previewCertificate` value if needed
+  };
+
   return (
-    <>
+    <Link to={`#certificate_${id}`}>
       <Center
-        py={{ base: 1, md: 6 }}
-        onClick={() => window.open(img, "_blank")}
+        onClick={() => clickHandle()}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          transform: isHovered ? "scale(1.05)" : "scale(1)",
+          transition: "transform 0.3s ease-in-out",
+        }}
+        overflow={"hidden"}
       >
         <Box
           maxW={"445px"}
           w={"full"}
-          // eslint-disable-next-line react-hooks/rules-of-hooks
           bg={"white"}
           boxShadow={"xl"}
           rounded={"md"}
-          overflow={"hidden"}
           h={"100%"}
         >
           <Box bg={"gray.200"}>
             <Image src={img} alt={altImg} />
+            {isHovered && (
+              <Box
+                className="animate__animated animate__fadeIn animate__faster"
+                bgColor={"blackAlpha.700"}
+                pos={"absolute"}
+                top={0}
+                right={0}
+                bottom={0}
+                display={"flex"}
+                left={0}
+                color="white"
+                alignItems={"center"}
+                justifyContent={"center"}
+              >
+                <IoMdEye
+                  size={40}
+                  className="animate__animated animate__zoomIn animate__faster"
+                />
+              </Box>
+            )}
           </Box>
-          {/* <Stack p={2}>
-          <HStack justifyContent={"space-between"} alignItems={"center"}>
-            <Text
-              color={"yellow.400"}
-              textTransform={"uppercase"}
-              fontWeight={800}
-              fontSize={"sm"}
-            >
-              {from}
-            </Text>
-            <Text color={"gray.500"}>{dateObtained}</Text>
-          </HStack>
-          <Heading
-            // eslint-disable-next-line react-hooks/rules-of-hooks
-            color={"gray.700"}
-            fontFamily={"body"}
-            fontSize={{ base: "md", sm: "2xl" }}
-          >
-            {title}
-          </Heading>
-        </Stack> */}
         </Box>
       </Center>
-    </>
+    </Link>
   );
 }
