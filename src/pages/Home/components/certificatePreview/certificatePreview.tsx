@@ -86,7 +86,7 @@ export default function CertificatePreview() {
             Navigation,
             HashNavigation,
           ]}
-          className="animate__animated animate__slideInUp
+          className="animate__animated animate__slideInUp animate__faster
           "
         >
           {certificateList
