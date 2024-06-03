@@ -29,7 +29,7 @@ export default function CertificatePreview() {
   useOnClickOutside(ref, closeHandler);
   return (
     <Box
-      className="animate__animated animate__fadeIn"
+      className="animate__animated animate__fadeIn animate__faster"
       userSelect={"none"}
       top={0}
       left={0}
@@ -43,8 +43,8 @@ export default function CertificatePreview() {
       bgColor={"rgba(0,0,0,0.8)"}
       zIndex={999}
     >
-      <Text style={{ color: "white" }} mb={5}>
-        Click on black area to close
+      <Text style={{ color: "whitesmoke" }} mb={5} fontSize={"sm"}>
+        Click on dark area to close preview
       </Text>
       <Box ref={ref} w={{ base: "90vw", md: "100vh", xl: "120vh" }}>
         <Swiper
@@ -86,7 +86,7 @@ export default function CertificatePreview() {
             Navigation,
             HashNavigation,
           ]}
-          className="animate__animated animate__slideInUp animate__faster
+          className="animate__animated animate__zoomIn animate__faster
           "
         >
           {certificateList
